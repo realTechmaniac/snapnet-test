@@ -15,6 +15,9 @@ use App\Http\Controllers\Api\AuthController;
 |
 */
 
+//REGISTER AS USER (TOKEN)
+Route::post('/register', [AuthController::class, 'store']);
+
 Route::middleware('auth:sanctum')->group(function () {
    Route::get('/fetch', [AuthController::class, 'get']);
 });

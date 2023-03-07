@@ -20,8 +20,6 @@ class AuthController extends Controller
     {
         $this->service = new AuthService();
     }
-
-   
     /**
      * Store a newly created resource in storage.
      */
