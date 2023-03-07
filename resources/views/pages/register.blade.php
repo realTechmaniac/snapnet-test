@@ -56,7 +56,7 @@
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Gender</label>
                     <select class="form-select" name = "gender"  aria-label="Default select example">
-                        <option>- SELECT -</option>
+                        <option value="">- SELECT -</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
@@ -64,8 +64,8 @@
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Ward</label>
                     <select class="form-select" name = "ward"  aria-label="Default select example">
-                        <option>- SELECT -</option>
                         @if(count($wards) > 0)
+                        <option value="">- SELECT -</option>
                             @foreach($wards as $ward)
                                 <option value="{{$ward->id}}">{{$ward->name}}</option>
                             @endforeach
