@@ -45,7 +45,7 @@
                 <tr>
                     <th scope="row">{{$count++}}</th>
                     <td>{{$item->id}}</td>
-                    <td>{{$item->full_name}}</td>
+                    <td><a href="{{route('view', $item->id)}}">{{$item->full_name}}</a></td>
                     <td>{{$item->gender}}</td>
                     <td><a href = "{{route('view', $item->id)}}" class = "btn btn-sm btn-success">View</a></td>
                 </tr>
